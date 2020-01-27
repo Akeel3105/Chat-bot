@@ -1,0 +1,20 @@
+actions:
+- action_res_search
+- utter_country
+- utter_greet
+entities:
+- name
+intents:
+- country
+- greet
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+slots:
+  name:
+    type: text
+templates:
+  utter_country:
+  - text: there you go
+  utter_greet:
+  - text: Hey! Please enter country name.
